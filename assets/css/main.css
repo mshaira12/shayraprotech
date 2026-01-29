@@ -523,10 +523,16 @@ html[lang="ar"] .site-footer .footer-nav ul {
 }
 
 .error-message {
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: none; /* masqué par défaut */
 }
+
 
 
 
