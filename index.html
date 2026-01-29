@@ -7,16 +7,7 @@
   <meta name="robots" content="noindex"> <!-- empêche Google de référencer cette page vide -->
 
   <script>
-    // Redirection automatique selon la langue du navigateur
-    const lang = navigator.language || navigator.userLanguage; // ex: "fr-FR", "ar", "en-US"
-
-    if (lang.startsWith('ar')) {
-      window.location.href = './ar/'; // pointe vers le dossier, pas index.html
-    } else if (lang.startsWith('fr')) {
-      window.location.href = './fr/';
-    } else {
-      window.location.href = './en/';
-    }
+    window.location.href = './en/';
   </script>
 </head>
 <body>
