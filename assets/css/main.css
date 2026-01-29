@@ -363,8 +363,9 @@ p {
 
 /* Ligne grande autour du slogan */
 .footer-bottom .footer-lines-t {
-  width: 600px;             /* largeur grande */
-  margin: 5px auto;         /* centrage + espace vertical */
+  width: 66%;              /* ≈ 2/3 de la largeur */
+  max-width: 600px;         /* limite sur PC */
+  margin: 5px auto;
   border: none;
   border-top: 1px solid var(--color-footer-border);
 }
