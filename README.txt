@@ -78,3 +78,84 @@ git log --graph --oneline --all   # historique visuel et compact
 ─────────────────────────────
 - Ce fichier peut rester dans le projet pour consultation rapide.
 - Il rappelle PowerShell, l'installation de Git, et toutes les commandes essentielles.
+
+
+
+
+
+
+
+
+
+
+
+==============================
+ShayraProTech – Memo Git / PowerShell
+==============================
+
+1️⃣ INSTALLATION ET OUTILS
+--------------------------
+- **PowerShell** : terminal par défaut de Windows pour exécuter les commandes Git.
+- **Git** : nécessaire pour versionner et pousser sur GitHub.
+  - Télécharger depuis : https://git-scm.com/downloads
+  - Installation rapide avec options par défaut.
+
+2️⃣ CREATION DU DOSSIER LOCAL
+-----------------------------
+- Créer un dossier sur ton PC pour le projet :
+  Exemple : C:\Users\m_sha\ProjetsWeb\shayraprotech
+- C’est ici que tu placeras tous tes fichiers HTML, CSS, JS, images, etc.
+
+3️⃣ INITIALISATION GIT
+----------------------
+Ouvrir PowerShell dans le dossier local et taper :
+
+# Initialiser le dépôt
+git init
+
+# Lier le dépôt local au dépôt GitHub
+git remote add origin https://github.com/mshaira12/shayraprotech.git
+
+4️⃣ COMMANDES UTILES GIT / PUSH
+--------------------------------
+# Vérifier l'état des fichiers
+git status
+
+# Ajouter fichiers modifiés à l'index (staging)
+git add .
+
+# Ou ajouter un fichier spécifique
+git add fr/about.html
+
+# Commit des modifications
+git commit -m "Description du commit"
+
+# Envoyer sur GitHub (branche main)
+git push origin main
+
+# Mettre à jour le dépôt local avec modifications du distant
+git pull origin main
+
+5️⃣ GESTION DES FICHIERS
+-------------------------
+# Pour supprimer un fichier du suivi Git (mais garder local)
+git rm --cached nom_du_fichier
+
+# Pour annuler un ajout à l'index
+git restore --staged nom_du_fichier
+
+6️⃣ URL WEB
+------------
+- Le site est publié via GitHub Pages :
+  https://mshaira12.github.io/shayraprotech/
+
+7️⃣ NOTES
+----------
+- Toujours créer le dossier local avant de cloner ou copier les fichiers.
+- Mettre ce fichier `memo.txt` ou `README.md` à la racine du projet.
+- Le JS du formulaire se trouve dans `assets/js/main.js`.
+- Le CSS principal est dans `assets/css/main.css`.
+- Pour ajouter de nouveaux fichiers ou dossiers : git add, commit, push.
+- Vérifier l'affichage sur GitHub Pages après chaque push.
+
+==============================
