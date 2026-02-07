@@ -2,16 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shayra ProTech</title>
+  <title>Shayra ProTech – France</title>
+  <meta name="description" content="Shayra ProTech – innovation in industrial training, R&D, and materials solutions in France.">
+
+  <!-- Meta Open Graph pour WhatsApp / réseaux sociaux -->
+  <meta property="og:title" content="Shayra ProTech @ France">
+  <meta property="og:description" content="Innovation through industrial training & development, materials & NDT solutions.">
+  <meta property="og:image" content="https://mshaira12.github.io/shayraprotech/assets/images/logoSM.webp">
+  <meta property="og:url" content="https://mshaira12.github.io/shayraprotech/">
+  <meta property="og:type" content="website">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex"> <!-- empêche Google de référencer cette page vide -->
+  <meta name="robots" content="noindex">
 
   <script>
     // Redirection automatique selon la langue du navigateur
-    const lang = navigator.language || navigator.userLanguage; // ex: "fr-FR", "ar", "en-US"
+    const lang = navigator.language || navigator.userLanguage;
 
     if (lang.startsWith('ar')) {
-      window.location.href = './ar/'; // pointe vers le dossier, pas index.html
+      window.location.href = './ar/';
     } else if (lang.startsWith('fr')) {
       window.location.href = './fr/';
     } else {
@@ -28,3 +37,4 @@
   </p>
 </body>
 </html>
+
