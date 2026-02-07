@@ -1,3 +1,51 @@
+# Quick Git & PowerShell Menu / قائمة سريعة لـ Git و PowerShell
+# PowerShell (Win10 or Win11)
+# Git : https://git-scm.com/download/win
+
+cd C:\Users\m_sha\ProjetsWeb\shayraprotech   # Go to project folder / للذهاب إلى مجلد المشروع
+pwd                                           # Show current folder path / عرض المسار الكامل للمجلد الحالي
+dir                                           # List files and folders / عرض الملفات والمجلدات في المجلد الحالي
+cd ..                                         # Go up one folder / العودة لمجلد أعلى
+
+git status                                    # Check file status (modified / untracked) / التحقق من حالة الملفات (معدلة / غير متعقبة)
+git add .                                     # Add all modified files for commit / إضافة كل الملفات المعدلة للتحضير للتثبيت
+git commit -m "Descriptive message"          # Create a commit with a message / إنشاء commit مع رسالة وصفية
+git push origin main                           # Push commits to GitHub (main branch) / رفع التغييرات على GitHub (فرع main)
+
+# GitHub Pages URL / رابط GitHub Pages
+https://mshaira12.github.io/shayraprotech/
+
+
+
+# Additional / Extra Commands / أوامر إضافية
+
+git add fr/about.html                          # Add a specific file / إضافة ملف محدد
+git restore --staged fr/about.html            # Unstage a file / إزالة ملف من الـ staging
+git log --oneline                             # Show commit history / عرض تاريخ الكوميتيات بشكل مختصر
+git branch                                    # Check current branch / التحقق من الفرع الحالي
+git checkout -b new-branch                    # Create and switch to a new branch / إنشاء فرع جديد والانتقال إليه
+git checkout main                             # Switch back to main branch / العودة إلى فرع main
+git merge new-branch                           # Merge a branch into main / دمج فرع في main
+git remote -v                                 # Show configured remote repositories / عرض المستودعات البعيدة المكونة
+git pull origin main                           # Pull latest changes from GitHub / جلب آخر التحديثات من GitHub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 =============================
    GIT & POWERSHELL CHEAT SHEET
 =============================
