@@ -1262,5 +1262,14 @@ html[lang="en"] .site-footer .footer-nav ul {
   }
 }
 
+/* ===== FIX MARGE MOBILE IMAGES ===== */
+@media (max-width: 640px) {
+
+  .flex-col {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+}
 
 
