@@ -17,13 +17,21 @@
 
 <script>
   const path = window.location.pathname;
-  if ((path === "/" || path === "/index.html")) {  // PAS de !path.startsWith("/api/")
+
+  // Redirige seulement si on est à la racine et pas sur une route API
+  if ((path === "/" || path === "/index.html") && !path.startsWith("/api/")) {
     const lang = navigator.language || navigator.userLanguage;
-    if (lang.startsWith('ar')) window.location.href = "/ar/";
-    else if (lang.startsWith('fr')) window.location.href = "/fr/";
-    else window.location.href = "/en/";
+
+    if (lang.startsWith('ar')) {
+      window.location.href = "/ar/";
+    } else if (lang.startsWith('fr')) {
+      window.location.href = "/fr/";
+    } else {
+      window.location.href = "/en/";
+    }
   }
 </script>
+
 
 
 </head>
