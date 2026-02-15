@@ -15,18 +15,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
 
-  <script>
-    // Redirection automatique selon la langue du navigateur
+<script>
+  const path = window.location.pathname;
+
+  // Redirige uniquement si on est à la racine du site
+  if (path === "/" || path === "/index.html") {
+
     const lang = navigator.language || navigator.userLanguage;
 
     if (lang.startsWith('ar')) {
-      window.location.href = './ar/';
+      window.location.href = "/ar/";
     } else if (lang.startsWith('fr')) {
-      window.location.href = './fr/';
+      window.location.href = "/fr/";
     } else {
-      window.location.href = './en/';
+      window.location.href = "/en/";
     }
-  </script>
+  }
+</script>
+
 </head>
 <body>
   <p>
