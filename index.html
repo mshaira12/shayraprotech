@@ -18,9 +18,11 @@
 <script>
   const path = window.location.pathname;
 
-  // Redirige uniquement si on est à la racine du site
-  if (path === "/" || path === "/index.html") {
-
+  // Ne redirige QUE si on est à la racine
+  if (
+    (path === "/" || path === "/index.html") &&
+    !path.startsWith("/api/")
+  ) {
     const lang = navigator.language || navigator.userLanguage;
 
     if (lang.startsWith('ar')) {
@@ -32,6 +34,7 @@
     }
   }
 </script>
+
 
 </head>
 <body>
