@@ -1,4 +1,3 @@
-
 export async function onRequestPost({ request, env }) {
   try {
     const formData = await request.formData();
@@ -7,7 +6,10 @@ export async function onRequestPost({ request, env }) {
     const message = formData.get("message");
 
     if (!email || !message) {
-      return new Response(JSON.stringify({ status: "error", message: "Missing fields" }), { status: 400, headers: { "Content-Type": "application/json" } });
+      return new Response(
+        JSON.stringify({ status: "error", message: "Missing fields" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
     }
 
     const apiResponse = await fetch("https://api.resend.com/emails", {
@@ -32,8 +34,14 @@ export async function onRequestPost({ request, env }) {
     const data = await apiResponse.json();
     if (!apiResponse.ok) throw new Error(JSON.stringify(data));
 
-    return new Response(JSON.stringify({ status: "success", message: "Email sent" }), { status: 200, headers: { "Content-Type": "application/json" } });
+    return new Response(
+      JSON.stringify({ status: "success", message: "Email sent" }),
+      { status: 200, headers: { "Content-Type": "application/json" } }
+    );
   } catch (err) {
-    return new Response(JSON.stringify({ status: "error", message: err.message }), { status: 500, headers: { "Content-Type": "application/json" } });
+    return new Response(
+      JSON.stringify({ status: "error", message: err.message }),
+      { status: 500, headers: { "Content-Type": "application/json" } }
+    );
   }
 }
