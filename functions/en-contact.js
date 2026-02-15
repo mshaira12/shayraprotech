@@ -1,4 +1,3 @@
-import { sendContactEmail } from "./utils.js"; // optionnel si tu factorises le code
 
 export async function onRequestPost({ request, env }) {
   try {
