@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <title>Shayra ProTech – Accueil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shayra ProTech – innovation industrielle, R&D et solutions matériaux.">
 
-<script>
-  const path = window.location.pathname;
+  <script>
+    const path = window.location.pathname;
 
-  // Redirige uniquement si on est à la racine, pas sur une route API
-  if ((path === "/" || path === "/index.html") && !path.startsWith("/api/")) {
-    const lang = navigator.language || navigator.userLanguage;
-
-    if (lang.startsWith('ar')) window.location.href = "/ar/";
-    else if (lang.startsWith('fr')) window.location.href = "/fr/";
-    else window.location.href = "/en/";
-  }
-</script>
+    // Redirige uniquement si on est à la racine ET pas sur une route API
+    if ((path === "/" || path === "/index.html") && !path.startsWith("/api/")) {
+      const lang = navigator.language || navigator.userLanguage;
+      if (lang.startsWith('ar')) window.location.href = "/ar/";
+      else if (lang.startsWith('fr')) window.location.href = "/fr/";
+      else window.location.href = "/en/";
+    }
+  </script>
 </head>
 <body>
   <p>
-    If you are not redirected automatically, click here:
-    <a href="./en/">English</a> |
-    <a href="./fr/">Français</a> |
-    <a href="./ar/">العربية</a>
+    If you are not redirected automatically, click here: 
+    <a href="./en/">English version</a> | 
+    <a href="./fr/">French version</a> | 
+    <a href="./ar/">Arabic version</a>
   </p>
 </body>
 </html>
