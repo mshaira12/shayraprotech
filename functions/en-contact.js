@@ -38,6 +38,7 @@ export async function onRequestPost({ request, env }) {
       JSON.stringify({ status: "success", message: "Email sent" }),
       { status: 200, headers: { "Content-Type": "application/json" } }
     );
+
   } catch (err) {
     return new Response(
       JSON.stringify({ status: "error", message: err.message }),

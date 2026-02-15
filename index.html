@@ -2,46 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shayra ProTech – France</title>
-  <meta name="description" content="Shayra ProTech – innovation in industrial training, R&D, and materials solutions in France.">
-
-  <!-- Meta Open Graph pour WhatsApp / réseaux sociaux -->
-  <meta property="og:title" content="Shayra ProTech @ France">
-  <meta property="og:description" content="Innovation through industrial training & development, materials & NDT solutions.">
-  <meta property="og:image" content="/assets/images/logoSM.png">
-  <meta property="og:url" content="https://shayraprotech.pages.dev/">
-  <meta property="og:type" content="website">
-
+  <title>Shayra ProTech – Accueil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
 
 <script>
   const path = window.location.pathname;
 
-  // Redirige seulement si on est à la racine et pas sur une route API
+  // Redirige uniquement si on est à la racine, pas sur une route API
   if ((path === "/" || path === "/index.html") && !path.startsWith("/api/")) {
     const lang = navigator.language || navigator.userLanguage;
 
-    if (lang.startsWith('ar')) {
-      window.location.href = "/ar/";
-    } else if (lang.startsWith('fr')) {
-      window.location.href = "/fr/";
-    } else {
-      window.location.href = "/en/";
-    }
+    if (lang.startsWith('ar')) window.location.href = "/ar/";
+    else if (lang.startsWith('fr')) window.location.href = "/fr/";
+    else window.location.href = "/en/";
   }
 </script>
-
-
-
 </head>
 <body>
   <p>
-    If you are not redirected automatically, click here: 
-    <a href="./en/">English version</a> | 
-    <a href="./fr/">French version</a> | 
-    <a href="./ar/">Arabic version</a>
+    If you are not redirected automatically, click here:
+    <a href="./en/">English</a> |
+    <a href="./fr/">Français</a> |
+    <a href="./ar/">العربية</a>
   </p>
 </body>
 </html>
-
